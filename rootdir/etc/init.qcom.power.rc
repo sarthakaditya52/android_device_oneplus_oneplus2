@@ -13,20 +13,18 @@ on charger
     write /sys/devices/system/cpu/cpu1/online 0
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
-    write /sys/devices/system/cpu/cpu4/online 0
     write /sys/devices/system/cpu/cpu5/online 0
     write /sys/devices/system/cpu/cpu6/online 0
     write /sys/devices/system/cpu/cpu7/online 0
     write /sys/module/msm_thermal/core_control/enabled 1
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
-service charger /system/bin/charger
+service charger /vendor/bin/chargeonlymode
     class charger
     user system
     group system graphics input
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
-    writepid /dev/cpuset/system-background/tasks
 
 on property:dev.bootcomplete=1
     setprop sys.io.scheduler "bfq"
