@@ -28,3 +28,4 @@ service charger /vendor/bin/chargeonlymode
 
 on property:dev.bootcomplete=1
     setprop sys.io.scheduler "bfq"
+    exec - root root system -- /vendor/bin/init.antigravity.sh

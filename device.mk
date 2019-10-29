@@ -225,6 +225,7 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.antigravity.sh \
     init.oneplus2.power.sh \
     init.program_bdaddr.sh \
     init.qcom.bt.sh \
