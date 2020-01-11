@@ -37,6 +37,10 @@ on early-init
 
     write /proc/sys/vm/page-cluster 0
 
+    # start qseecomd early
+    # vold needs keymaster for FDE
+    start qseecomd
+
 on fs
     wait /dev/block/platform/soc.0/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc.0/${ro.boot.bootdevice} /dev/block/bootdevice
@@ -404,6 +408,7 @@ service qseecomd /vendor/bin/qseecomd
     class core
     user root
     group root
+    shutdown critical
     writepid /dev/cpuset/foreground/tasks
 
 service perfd /vendor/bin/perfd
