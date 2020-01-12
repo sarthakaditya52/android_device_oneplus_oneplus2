@@ -278,6 +278,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
+# Wallpapers
+PRODUCT_PACKAGES += \
+    PixelLiveWallpaperPrebuilt
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
