@@ -65,7 +65,7 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8994
 TARGET_KERNEL_CONFIG := antigravity_defconfig
 # Toolchain: https://github.com/Pierre2324/aarch64-linux-android-4.9-uber-master
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := /home/lucy/aarch64-linux-android-4.9-uber-master/bin/aarch64-linux-android-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := /home/sarthak/aarch64-linux-android-4.9-uber-master/bin/aarch64-linux-android-
 
 # Audio
 AUDIO_FEATURE_ENABLED_ACDB_LICENSE := true
