@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_oneplus2.mk
+    $(LOCAL_DIR)/bootleg_oneplus2.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_oneplus2-user \
-    aosp_oneplus2-userdebug \
-    aosp_oneplus2-eng
+    bootleg_oneplus2-user \
+    bootleg_oneplus2-userdebug \
+    bootleg_oneplus2-eng
