@@ -27,6 +27,10 @@ $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Shishufy
+DEVICE_MAINTAINERS := "Sarthak"
+BOOTLEGGERS_BUILD_TYPE := Shishufied
+
 PRODUCT_NAME := bootleg_oneplus2
 PRODUCT_DEVICE := oneplus2
 PRODUCT_MANUFACTURER := OnePlus
