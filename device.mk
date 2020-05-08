@@ -329,4 +329,4 @@ PRODUCT_PACKAGES += \
     chargeonlymode
 
 # Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
+#$(call inherit-product, device/oppo/common/common.mk)

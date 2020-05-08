@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_oneplus2.mk
+    $(LOCAL_DIR)/liquid_oneplus2.mk
 
 COMMON_LUNCH_CHOICES := \
-    bootleg_oneplus2-user \
-    bootleg_oneplus2-userdebug \
-    bootleg_oneplus2-eng
+    liquid_oneplus2-user \
+    liquid_oneplus2-userdebug \
+    liquid_oneplus2-eng
